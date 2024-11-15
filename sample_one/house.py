@@ -46,7 +46,20 @@ ctx.set_line_join(cairo.LINE_JOIN_MITER)
 ctx.move_to(250, 300)
 ctx.line_to(250, 700)
 ctx.line_to(550, 820)
-ctx.line_to(1330, 720)
+ctx.line_to(1130, 730)
+ctx.line_to(1130, 470)
+ctx.line_to(1280, 455)
+ctx.line_to(1280, 710)
+
+ctx.new_sub_path()
+ctx.move_to(1130, 710)
+ctx.line_to(1260, 690)
+ctx.line_to(1280, 710)
+ctx.stroke()
+ctx.close_path()
+
+ctx.line_to(1280, 710)
+ctx.line_to(1330, 700)
 ctx.line_to(1330, 360)
 ctx.stroke()
 
@@ -55,6 +68,14 @@ ctx.move_to(550, 820)
 ctx.line_to(550, 400)
 ctx.close_path()
 ctx.stroke()
+
+ctx.set_line_width(5)
+ctx.move_to(1260, 455)
+ctx.line_to(1260, 690)
+ctx.stroke()
+
+ctx.set_line_width(8)
+
 
 # Write to png
 surface.write_to_png('house.png')
