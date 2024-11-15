@@ -10,7 +10,7 @@ ctx = cairo.Context(surface)
 ctx.set_source_rgb(*BG_COLOR)
 ctx.paint()
 
-# Roof outline
+# House outline
 ctx.set_line_width(5)
 ctx.set_source_rgb(0, 0, 0)
 ctx.move_to(410, 100)
@@ -73,8 +73,6 @@ ctx.set_line_width(5)
 ctx.move_to(1260, 455)
 ctx.line_to(1260, 690)
 ctx.stroke()
-
-ctx.set_line_width(8)
 
 
 # Write to png
